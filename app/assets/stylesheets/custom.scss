@@ -1,3 +1,10 @@
+
+
+.form-title-styles {
+    color: #8fa48f;
+
+}
+
 .heading-styles {
     color: #8fa48f;
     text-transform: uppercase;
@@ -7,6 +14,10 @@
     &:hover {
         color: #aac0aa ;
     }
+}
+
+textarea {
+    min-height: 200px !important;
 }
 .navbar {
     background-color: #ebf4eb !important;

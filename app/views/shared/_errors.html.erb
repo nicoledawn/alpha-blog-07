@@ -1,0 +1,14 @@
+
+    <% if @article.errors.any? %>
+        <div class="alert alert-danger alert-dismissable" role="alert">
+            <div class="d-flex align-items-center justify-content-between mb-0">
+                <h6>The following errors prevented the article from being saved:</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <ul class="mb-0 w-100">
+                <% @article.errors.full_messages.each do |msg| %>
+                            <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>

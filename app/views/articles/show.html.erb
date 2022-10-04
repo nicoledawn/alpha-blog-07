@@ -1,7 +1,24 @@
-<h1>Showing article details</h1>
-<p><strong>Title: </strong><%= @article.title %> </p>
-<p><strong>Description: </strong><%= @article.description %></p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Delete', article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> |
-<%= link_to 'Return to Articles Listing', articles_path %>
+    <h2 class="text-center mt-4"><%= @article.title %></h2>
+    <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 mt-4">
+                    <div class="card text-center shadow  mb-5 bg-body rounded">
+                        <small class="card-header text-muted fw-light text-lowercase fst-italic">by Nicole Holland</small>
+                        <div class="card-body">
+                            <div class="card-text text-start"><%= simple_format(@article.description) %></div>
+                            <div class= "d-flex justify-content-center"> 
+                                <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-outline-secondary m-1' %>
+                                <%= link_to 'Delete', article_path(@article), class: "btn btn-outline-danger m-1", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%>
+                            </div>
+                        </div>
+                        <div class="card-footer fw-light text-muted">
+                            <small>Created <%= time_ago_in_words(@article.created_at) %> ago, edited <%= time_ago_in_words(@article.updated_at) %> ago.</small>
+                        </div>
+                    </div>
+                </div>
+                <%= link_to '[ Return to articles listing ]', articles_path, class: "text-dark text-center" %>
+            </div>
+    </div>
+
+
