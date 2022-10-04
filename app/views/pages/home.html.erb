@@ -1,38 +1,20 @@
-<nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Alpha Blog</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Articles
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Article 1</a></li>
-                      <li><a class="dropdown-item" href="#">Article 2</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Articles Index</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Users</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-              
-             
-          </div>
-        </div>
-      </nav> 
+<div id="page-content" class="d-flex flex-column justify-content-end">
 
-<h1 class="display-1">This is the home page</h1>
+<div class="container-fluid justify-content-center d-flex flex-column p-0" id="fleep">
+  <div class="mt-0 p-5 text-center d-block position-relative">
+    <div class=" rounded m-auto px-4 py-5 w-50 " id="home-hero-container">
+      <h1 class="display-2 text-uppercase fw-bold">Alpha Blog</h1>
+      <h3 class="text-secondary">Join us today!</h3>
+      <button type="button" class="w-50 btn btn-outline-secondary btn-lg ms-auto mt-3 ">Sign up</button>
+      </div>
+  </div>
+  </div>
 
-<%= link_to 'Articles Listing', articles_path %> |
-<%= link_to 'About Page', about_path %>
+  <div class="container-fluid text-center p-2 justify-content-center d-flex flex-column w-75 mt-auto" >
+  <h3 class="display-5">A little about us </h3>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil sapiente tempore, quis neque dolorum aperiam, saepe asperiores delectus odit assumenda exercitationem ab voluptates. Architecto tenetur laboriosam neque magni odio.</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, perspiciatis officia aliquam nobis libero, et officiis at enim minima a vitae ipsum! Nobis praesentium, vel culpa, blanditiis atque provident ab adipisci accusantium inventore, reiciendis porro vero quod rerum amet? Ex.</p>
+
+  </div>
+</div>
+

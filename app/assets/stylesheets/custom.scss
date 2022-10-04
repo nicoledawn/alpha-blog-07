@@ -1,0 +1,75 @@
+.heading-styles {
+    color: #8fa48f;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+        color: #aac0aa ;
+    }
+}
+.navbar {
+    background-color: #ebf4eb !important;
+}
+
+h1 {
+    color: #aac0aa !important;
+    letter-spacing: -2px !important;
+    
+}
+
+#logo {
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 2rem;
+    color: #aac0aa;
+    font-weight: 700;
+}
+
+#fleep {
+    min-height: 600px;
+    background-image: url('home.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+#home-hero-container {
+    background: #ffffffBF;
+}
+
+@media (max-width: 1199.98px) { 
+    #home-hero-container {
+        width: 95% !important;
+    }
+ }
+
+ @media (max-width: 520px) {
+    footer div {
+        flex-direction: column-reverse;
+        justify-content: center !important;
+    }
+
+    #footer-nav {
+        flex-direction: column;
+
+    }
+
+    #footer-padding {
+        height: 300px !important;
+    }
+
+ }
+
+footer {
+    background-color: #ebf4eb !important;
+    
+
+    
+}
+
+
+
+.nav-link {
+    color: #8fa48f !important ;  
+}
