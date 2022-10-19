@@ -16,8 +16,13 @@
                             <p class="card-text"><%= pluralize(user.articles.count, "article") %></p>
                             <div class= "d-flex justify-content-center">
                                 <%= link_to 'View Profile', user, class: 'btn btn-outline-success m-1' %> 
-                                <% if logged_in? && user == current_user %>
+                                <% if logged_in? %> 
+                                <% if user == current_user %>
                                 <%= link_to 'Edit Profile', edit_user_path(user), class: 'btn btn-outline-secondary m-1' %>
+                                <% end %>
+                                <% if current_user.admin? %>
+                                <%= link_to "Delete User", user_path(user), class: "btn btn-outline-danger m-1", data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete the user account and all associated articles?" } %> 
+                                <% end %>
                                 <% end %>
                                
                             </div>
