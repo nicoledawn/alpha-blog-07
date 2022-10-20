@@ -2,7 +2,7 @@
     <% if obj.errors.any? %>
         <div class="alert alert-danger alert-dismissable" role="alert">
             <div class="d-flex align-items-center justify-content-between mb-0">
-                <h6>The following errors prevented the <%= obj.class.name.downcase %> from being saved:</h6>
+                <h6 class="alert-heading">The following errors prevented the <%= obj.class.name.downcase %> from being saved:</h6>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <ul class="mb-0 w-100">
