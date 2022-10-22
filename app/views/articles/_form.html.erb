@@ -19,6 +19,18 @@
             </div>
         </div>
 
+        <div class="row mb-3">
+            <%= f.label :category, class: "col-sm-2 col-form-label  form-title-styles" %>
+            <div class="col-sm-10">
+
+            
+                <%= f.collection_select(:category_ids, Category.all, :id, :name, {prompt: "Make your selection from the list below" }, {multiple: true, size: 3, class: "form-select shadow rounded"}) %>
+            
+            
+            
+            </div>
+        </div>
+
         <div class=" d-grid gap-2 d-md-flex justify-content-md-center">
             <%= f.submit class: "btn btn-outline-secondary" %>
         </div>

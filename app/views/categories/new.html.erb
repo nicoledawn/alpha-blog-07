@@ -5,24 +5,13 @@
 
     <div class="row justify-content-center">
     <div class="col-10">
-    <%= render 'shared/errors', obj: @category %>
-    <%= form_with(model: @category, class: "shadow p-3 mb-5 bg-light rounded", data: {turbo: false}) do |f| %>
-        <div class="row mb-3">
-            <%= f.label :name, "Category Name", class: "col-sm-2 col-form-label form-title-styles" %>
-            <div class="col-sm-10">
-            <%= f.text_field :name, class: "form-control shadow rounded", placeholder: "Enter a category name" %>
-            </div>
-        </div>
+    <%= render 'form' %>
 
        
 
-        <div class=" d-grid gap-2 d-md-flex justify-content-md-center">
-            <%= f.submit class: "btn btn-outline-secondary" %>
-        </div>
-        </div>
-    <% end %>
-
-    <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-dark text-center" %>
+       
+</div>
+    <%= link_to '[ Cancel and return to categories listing ]', categories_path, class: "text-dark text-center" %>
     </div>
 
 </div>
